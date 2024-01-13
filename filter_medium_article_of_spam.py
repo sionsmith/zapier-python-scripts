@@ -10,7 +10,7 @@ def main():
     title = input_data["title"]
 
     # Define a list of words to filter out
-    filter_words = ["finance", "loan", "+", "number", "customer", "credit", "call", "7", "8", "9", "0"]
+    filter_words = ["finance", "loan", "+", "number", "customer", "credit", "call", "care", "8", "9", "0"]
 
     # Initialize a flag to check if the title needs to be filtered
     filter_title = False
