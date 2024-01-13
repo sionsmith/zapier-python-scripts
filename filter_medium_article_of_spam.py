@@ -1,7 +1,8 @@
 # test data
 input_data = {
     # "title": "How to make $1000 in 1 day",
-    "title": "Personal Finance Assistant cusTomer care service Toll free Number)+91)"
+    # "title": "Personal Finance Assistant cusTomer care service Toll free Number)+91)"
+    "title": "Photo by Francesco Ungaro on UnsplashAMP CREDIT LOAN APP CUSTOMER CARE HELPLINE Number"
 
 }
 def main():
@@ -9,7 +10,7 @@ def main():
     title = input_data["title"]
 
     # Define a list of words to filter out
-    filter_words = ["finance", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    filter_words = ["finance", "loan", "+", "number", "customer", "credit", "call", "7", "8", "9", "0"]
 
     # Initialize a flag to check if the title needs to be filtered
     filter_title = False
@@ -17,7 +18,7 @@ def main():
     # Loop through each word in the filter_words list
     for word in filter_words:
         # If the word is found in the title, set the filter_title flag to True
-        if word in title:
+        if word.lower() in title.lower():
             filter_title = True
             # Break the loop as we don't need to check for any more words
             break
